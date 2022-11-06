@@ -35,7 +35,7 @@ The following tools were used
         - job_name: prometheus
           honor_timestamps: true
           scrape_interval: 2s
-          scrape_timeout: 10s
+          scrape_timeout: 2s
           metrics_path: /metrics
           scheme: http
           follow_redirects: true
