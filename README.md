@@ -53,16 +53,18 @@ The following tools were used
 - Setting up grafana server
   - We'll be using docker for installation simplicity
     - Start grafana server (Note: Update port as required)
-      - ```bash
-        docker run -d -p 3000:3000 --name grafana grafana/grafana-oss
-        ```
+      - `docker run -d -p 3000:3000 --name grafana grafana/grafana-oss`
   - Once the server has started. Go to grafana end point `http://<server>:3000`
     - Add data source
       - Prometheus
       - URL: `http://<server>:9090`
       - Save & test
-    - Add Dashboard
-      - Add a new Panel
-      - Metric > Select metric
-        - If everything is set correctly you'll find metric prefixed with `hwi_`
-    - Create dashboard to your liking
+    
+- Create dashboard to your liking
+  - Add Dashboard
+    - Add a new Panel
+    - Metric > Select metric
+      - If everything is set correctly you'll find metric prefixed with `hwi_`
+
+### Screenshot
+![example](https://github.com/iceinvein/hwinfo-prometheus-grafana/blob/a2579b0f8ddf27e75648648ce7adc4555d404ee7/example.png)
