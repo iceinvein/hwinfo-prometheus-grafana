@@ -50,13 +50,12 @@ The following tools were used
         -p 9090:9090 \
         -v /host/path/to/prometheus.yml:/etc/prometheus/prometheus.yml \
         prom/prometheus
-      ```
-  - Setting up grafana server
-    - We'll be using docker for installation simplicity
-      - Start grafana server (Note: Update port as required)
-        - ```
-          docker run -d -p 3000:3000 --name grafana grafana/grafana-oss
-          ```
+- Setting up grafana server
+  - We'll be using docker for installation simplicity
+    - Start grafana server (Note: Update port as required)
+      - ```bash
+        docker run -d -p 3000:3000 --name grafana grafana/grafana-oss
+        ```
   - Once the server has started. Go to grafana end point `http://<server>:3000`
     - Add data source
       - Prometheus
